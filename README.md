@@ -50,3 +50,20 @@ Make sure **FFmpeg** is installed on your system (required for Telegram voice me
    ```bash
    git clone [https://github.com/YOUR_USERNAME/SmartChildSafety.git](https://github.com/YOUR_USERNAME/SmartChildSafety.git)
    cd SmartChildSafety
+
+   python -m venv venv
+# On Windows:
+venv\Scripts\activate
+# On macOS/Linux:
+source venv/bin/activate
+
+pip install -r requirements.txt
+
+cp .env.example .env
+
+python guard.py
+
+🎮 ControlsKeyActionTAB / SPACEToggle UI mode between FULL (shows bounding boxes, lasers, and tracking debugs) and STEALTH[cite: 3]qExit application[cite: 3]
+
+📄 License
+This project is open-source and available under the MIT License.
